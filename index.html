@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taschenrechner 2.0</title>
+    <script src="script.js"></script>
+    <script src="./node_modules/mathjs/lib/browser/math.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box1">
+        <div class="ausgabe">
+            <div class="vorheriger-operant"></div>
+            <div class="aktueller-operant">0</div>
+        </div>
+            <button onclick="hinzufuegen('(')">(</button>
+            <button onclick="hinzufuegen(')')">)</button>
+            <button onclick="loeschen()">DEL</button>
+            <button onclick="operationF(4)">÷</button>
+            <button onclick="hinzufuegen('7')">7</button>
+            <button onclick="hinzufuegen('8')">8</button>
+            <button onclick="hinzufuegen('9')">9</button>
+            <button onclick="operationF(3)">*</button>
+            <button onclick="hinzufuegen('4')">4</button>
+            <button onclick="hinzufuegen('5')">5</button>
+            <button onclick="hinzufuegen('6')">6</button>
+            <button onclick="operationF(2)">-</button>
+            <button onclick="hinzufuegen('1')">1</button>
+            <button onclick="hinzufuegen('2')">2</button>
+            <button onclick="hinzufuegen('3')">3</button>
+            <button onclick="operationF(1)" class="button3">+</button>
+            <button onclick="komma()">.</button>
+            <button onclick="hinzufuegen('0')">0</button>
+            <button class="button4"></button>
+            <button onclick="ac()" class="button2">AC</button>
+            <button onclick="berechnen()" class="button2">=</button>
+    </div>
+</body>
+</html>
